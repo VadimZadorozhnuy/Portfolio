@@ -1,0 +1,48 @@
+@media only screen and (max-width: 1100px){
+	.section_content .wrapper{
+		width: 650px;
+	}
+	.resume .shift_down {
+		margin-bottom: 190px;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.top_content h1{
+		font-size: 40px;
+	}
+	.top_content p{
+		margin: 0 20px;
+	}
+	.top_mnu ul{
+		margin-top: 150px;
+	}
+	.top_content p{
+		color: #C9CAC4;
+		font-size: 14px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		line-height: 1.2;
+	}
+	.section_content .wrapper{
+		width: 300px;
+	}
+	.my_photo img{
+		width: 200px;
+	}
+	.resume_container .left,
+	.resume_container .right{
+		border: none;
+		text-align: center;
+	}
+	.resume .shift_down {
+		margin-bottom: 25px;
+	}
+	.main_footer ul, .main_footer .copyright{
+		text-align: center;
+	}
+	@media only screen and (max-width: 360px){
+	.text_image_tab > label{
+		clear: both;
+	}
+}

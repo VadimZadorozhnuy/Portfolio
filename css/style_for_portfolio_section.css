@@ -1,0 +1,67 @@
+.portfolio_img_wrap .portfolio_item{
+	padding: 0;
+	margin: 0;
+}
+.portfolio_item img{
+	background: rgba(0,0,0,.5);
+	margin:0;
+	padding: 0;
+	width: 100%;
+}
+.portfolio_item .descr_image{
+	background-color: rgba(0,0,0,.7);
+	color: #999;
+	font-size: 15px;
+	font-weight: 500;
+	left: 0;
+	letter-spacing: 1px;
+	padding: 30% 0;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.portfolio_item .descr_image:hover{
+	background-color: transparent;
+	border: 2px solid #fff;
+	color: transparent;
+	cursor: pointer;
+	transition: all 0.2s;
+	font-weight: 400;
+}
+
+/*Style for mixItUp*/
+.controls ul{
+	text-align: center;
+}
+.controls ul li{
+	display: inline-block;
+	text-transform: uppercase;
+	color: #999;
+	margin: 15px;
+	letter-spacing: 1px;
+}
+.controls ul li.active{
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+.controls ul li:hover{
+	cursor: pointer;
+	color: #fff;
+}
+.mix_container:after{
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+.mix_container .mix,
+.mix_container .gap{
+	display: inline-block;
+}
+.mix_container .mix{
+	text-align: left;
+	display: none;
+}
+
