@@ -326,7 +326,8 @@ section h2{
 	outline-left: 1px solid #000;
 	text-align: left;
 }
-.left, .right{
+.resume_container .left, 
+.resume_container .right{
 	margin-bottom: 25px;
 }
 .resume h3{
@@ -365,6 +366,11 @@ section h2{
 }
 .portfolio .descr{
 	letter-spacing: 2px;
+}
+.portfolio .row{
+	margin-bottom: 25px;
+	height: 100%;
+	min-height: 330px;
 }
 .mfp-figure img.mfp-img{
 	padding: 0;

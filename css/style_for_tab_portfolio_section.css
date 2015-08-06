@@ -5,13 +5,10 @@
 .tab_table{
 	clear: both;
 }
-.table_page{
-
-}
 .tab_table div{
 	background: #fff;
 	color:#333;
-	border-radius: 0 0 5px 5px;
+	border-radius: 0 5px 5px 5px;
 	opacity: 0;
 	display: none;
 	padding-bottom: 1px;
@@ -37,10 +34,9 @@
 	background: #666;
 }
 .table_page h2{
-	padding-top: 20px;
+	padding-top: 15px;
 	text-align: center;
-	margin: 15px auto;
-
+	margin-bottom: 15px;
 }
 .table_page img{
 	width: 150px;
@@ -69,13 +65,13 @@
 	opacity: 0;
 	left: 50%;
 	margin-bottom: 15px;
-	-webkit-transition: opacity .6s, margin-bottom .7s;
-	-moz-transition: opacity .6s, margin-bottom .7s;
-	transition: opacity .6s, margin-bottom .7s;
+	-webkit-transition: opacity .7s, margin-bottom .7s;
+	-moz-transition: opacity .7s, margin-bottom .7s;
+	transition: opacity .7s, margin-bottom .7s;
 }
 .tab_tooltip:before{
 	color: #1f8b8a;
-	background-color: rgba(0,0,0,.9);
+	background-color: #000;
 	border-radius: 5px;
 	bottom: 25px;
 	content: attr(data-title);
@@ -86,7 +82,7 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	}
+}
 .tab_tooltip:hover:before,
 .tab_tooltip:hover:after{
 	visibility: visible;
@@ -96,7 +92,7 @@
 }
 .tab_tooltip:after{
 	content: "";
-	border-top: 10px solid rgba(0, 0, 0, 0.9);
+	border-top: 10px solid #000;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
 	bottom: 10px;

@@ -1,0 +1,19 @@
+.carousel{
+	height: 100%;
+	width: 89%;
+	margin: 0px auto 50px;
+}
+.carousel-inner .item img{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+.carousel .carousel-control{
+	width: 10%;
+}
+.carousel-indicators li{
+	list-style: square;
+}
+.carousel-inner .item .carousel-caption h3{
+	text-transform: uppercase;
+}

@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="lib/bootstrap-theme.css">
 	<link rel="stylesheet" href="css/style_for_portfolio_section.css">
 	<link rel="stylesheet" href="css/style_for_tab_portfolio_section.css">
+	<link rel="stylesheet" href="css/style_for_carousel.css">
 	<link rel="stylesheet" href="lib/bootstrap.css">
 	<link rel="stylesheet" href="lib/magnific-popup.css">
 </head>
@@ -233,8 +234,8 @@
 		</div>	
 
 		<div class="row">
-			<div class="col-md-3 col-sm-2 col-xs-1"></div>
-			<div class="col-md-6 col-sm-8 col-xs-10">
+			<div class="col-md-4 col-sm-2 col-xs-1"></div>
+			<div class="col-md-4 col-sm-8 col-xs-10">
 				<div class="text_image_tab">
 					<input type="radio" name="table" id="n1" checked>
 					<label for="n1">Tab 1</label>
@@ -252,7 +253,7 @@
 							<a href="img/high_res/holm.jpg" class="popup">
 								<img src="img/holm.jpg" alt="alt">
 							</a>
-							<p>Error nobis officia earum quibusdam doloremque. Accusantium, quod dignissimos porro, consequatur qui optio explicabo quidem aperiam odit rerum! <span class="tab_tooltip" data-title="Tooltip message on Tab1">Obcaecati</span> eligendi pariatur commodi. Incidunt eveniet mollitia voluptatum consectetur earum, magnamaut consequuntur, nesciunt, corporis dignissimos eligendi nisi reprehenderit saepe ratione blanditiis debitis veniam. Porro, neque?</p>
+							<p>Error nobis officia earum quibusdam doloremque. Accusantium, quod dignissimos porro, consequatur qui optio explicabo <span class="tab_tooltip" data-title="Tooltip message on Tab1">quidem</span> aperiam odit rerum! Obcaecati eligendi pariatur commodi. Incidunt eveniet mollitia voluptatum consectetur earum, magnamaut consequuntur, nesciunt, corporis dignissimos eligendi nisi reprehenderit saepe ratione blanditiis debitis veniam. Porro, neque?</p>
 						</div>
 
 						<div class="table_page">
@@ -281,8 +282,61 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-2 col-xs-1"></div>
-		</div>	
+			<div class="col-md-4 col-sm-2 col-xs-1"></div>
+		</div>
+
+		<div id="carousel" class="carousel slide">
+			<ol class="carousel-indicators">
+				<li class="active" data-target="#carousel" data-slide-to="0"></li>
+				<li data-target="#carousel" data-slide-to="1"></li>
+				<li data-target="#carousel" data-slide-to="2"></li>
+				<li data-target="#carousel" data-slide-to="3"></li>
+				<li data-target="#carousel" data-slide-to="4"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="http://lorempixel.com/1170/400" alt="Image">
+					<div class="carousel-caption">
+						<h3>Первый слайд</h3>
+						<p>Описание 1 слайда</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="http://lorempixel.com/1170/400/transport" alt="Image">
+					<div class="carousel-caption">
+						<h3>Второй слайд</h3>
+						<p>Описание 2 слайда</p>
+					</div>
+				</div>					
+				<div class="item">
+					<img src="http://lorempixel.com/1170/400/nature" alt="Image">
+					<div class="carousel-caption">
+						<h3>Третий слайд</h3>
+						<p>Описание 3 слайда</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="http://lorempixel.com/1170/400/people" alt="Image">
+					<div class="carousel-caption">
+						<h3>Четвертый слайд</h3>
+						<p>Описание 4 слайда</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="http://lorempixel.com/1170/400/business" alt="Image">
+					<div class="carousel-caption">
+						<h3>Пятый слайд</h3>
+						<p>Описание 5 слайда</p>
+					</div>
+				</div>
+			</div>
+			<a href="#carousel" class="left carousel-control" data-slide="prev">
+				<span class="icon-prev"></span>
+			</a>
+			<a href="#carousel" class="right carousel-control" data-slide="next">
+				<span class="icon-next"></span>
+			</a>
+		</div>
 	</section>
 
 	<section id="contacts" class="contacts bg_light">

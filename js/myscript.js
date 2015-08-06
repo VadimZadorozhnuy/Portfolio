@@ -38,6 +38,8 @@ $(document).ready(function(){
 		}
 	});
 
+	
+
 	$("input, select, textarea").jqBootstrapValidation();
 
 	$('.top_mnu ul a').on("click", function(){
