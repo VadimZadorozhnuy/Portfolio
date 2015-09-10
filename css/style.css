@@ -23,8 +23,8 @@ section,
 	z-index: 9999;
 }
 .loader_inner {
-	background-image: url("../img/loader.gif");
 	background-color: #fff;
+	background-image: url("../img/loader.gif");
 	background-position: center center;
 	background-repeat: no-repeat;
 	height: 128px;
@@ -54,10 +54,6 @@ section,
 .toggle_mnu:hover{
 	cursor: pointer;
 }
-.container {
-	margin-bottom: 15px;
-	padding-bottom: 15px;
-}
 .sandwich {
 	bottom: 0;
 	height: 50px;
@@ -69,23 +65,22 @@ section,
 	width: 50px;
 }
 .sw-topper {
-	position: relative;
-	/* transition-delay: 0.2s, 0s; */
 	background: #fff;
 	border-radius: 4px 4px 4px 4px;
 	border: none;
 	display: block;
 	height: 3px;
 	left: 5px;
+	position: relative;
 	top: 13px;
 	transition: transform 0.5s, top 0.2s;
 	width: 40px;
 }
 .sw-bottom {
-	display: block;
 	background: #fff;
 	border-radius: 4px 4px 4px 4px;
 	border: none;
+	display: block;
 	height: 3px;
 	left: 5px;
 	position: relative;
@@ -141,10 +136,10 @@ section,
 	text-align: center;
 }
 .top_mnu ul li a{
-	letter-spacing: 4px;
 	color: #fff;
 	display: block;
 	font-size: 16px;
+	letter-spacing: 4px;
 	margin: 0 10px;
 	padding: 20px 10px;
 	text-decoration: none;
@@ -197,35 +192,48 @@ ul li a:nth-child(5){
 	text-align: center;
 }
 .top_content{
-	display: inline-block;
 	color: #fff;
+	display: inline-block;
 }
 .top_content h1{
-	animation-delay: 1.5s;
+	-o-animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
 	display: inline-block;
 	font-size: 60px;
 	font-weight: bold;
 	letter-spacing: 2px;
-	margin: 100px 10px 30px;
+	margin: 80px 0 30px;
 	padding: 15px 0;
 	text-transform: uppercase;
 	word-spacing: 5px;
 }
+.top_content h1::after{
+	background-color: #fff;
+	content: "";
+	font-weight: bold;
+	height: 1px;
+	left: 50%;
+	margin: 90px 0 30px -125px;
+	position: absolute;
+	width: 250px;
+}
 .top_content h3{
-	-o-animation-delay: 2.5s;
-	-webkit-animation-delay: 2.5s;
-	animation-delay: 2.5s;
+	-o-animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
 	font-size: 16px;
-	letter-spacing: 1px;
+	font-weight: 300;
+	letter-spacing: 2px;
 	line-height: 2;
-	font-weight: 500;
 	margin: 0;
+	text-transform: uppercase;
 }
 section{
 	margin: 0 auto;
+	overflow: hidden;
 	padding: 30px 0;
 	width: 100%;
-	overflow: hidden;
 }
 .bg_light{
 	background-color: #CACACA;
@@ -251,10 +259,11 @@ section h2{
 	text-align: center;
 	text-transform: uppercase;
 }
-.descr{
+.section_header .descr{
 	display: inline-block;
+	font-size: 16px;
 	letter-spacing: 1px;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 	position: relative;
 	text-transform: uppercase;
 }
@@ -315,7 +324,6 @@ section h2{
 .my_social a>i{
 	float: left;
 	font-size: 24px;
-	margin: 10px;
 	padding: 10px;
 }
 .resume_container .left{
@@ -338,126 +346,99 @@ section h2{
 	margin-top: 15px;
 	text-transform: uppercase;
 }
-.resume_description{
-	font-size: 18px;
-	letter-spacing: 0.25px;
-	margin-bottom: 5px;
-}
-.resume_description strong{
-	font-weight: 500;
-}
-.resume p {
+.resume p{
 	font-size: 16px;
 	letter-spacing: 0.25px;
+}
+.resume_item .resume_description{
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 0.25px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+.resume_description strong,
+.resume p strong{
+	font-weight: 500;
+	text-transform: none;
 }
 .resume .shift_down{
 	margin-bottom: 165px;
 }
 .resume_item .year{
-	font-weight: 500;
 	background-color: #AF0E0E;
 	color: #A9A9A9;
 	display: inline-block;
 	font-size: 15px;
+	font-weight: 500;
 	letter-spacing: 1px;
 	margin-bottom: 5px;
 	margin-top: 15px;
 	padding: 5px 15px;
 }
-.portfolio .descr{
-	letter-spacing: 2px;
-}
 .portfolio .row{
-	margin-bottom: 25px;
 	height: 100%;
-	min-height: 330px;
+	margin-bottom: 25px;
 }
 .mfp-figure img.mfp-img{
 	padding: 0;
 }
 .mfp-zoom-out-cur .mfp-image-holder .mfp-close{
-	color: #777;
-	position: absolute;
-	top: 0;
-	right: 0;
 	background-color: #111;
-	width: 40px;
-	text-align: center;
-	padding: 0;
-	margin: 0;
+	color: #777;
 	height: 43px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	width: 40px;
 }
 .mfp-zoom-out-cur .mfp-image-holder .mfp-close:hover{
+	color: #fff;
 	cursor: pointer;
-	color: #fff;
-}
-.main_footer .container{
-	width: 90%;
-}
-.main_footer .copyright{
-	margin-top: 60px;
-	color: #999;
-	font-size: 15px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	word-spacing: 5px;
-}
-.main_footer .copyright span{
-	font-weight: bold;
-}
-.main_footer .my_social .fa{
-	text-align: right;
-	color: #555;
-	margin-top: 50px;
-}
-.main_footer .my_social .fa:hover{
-	color: #fff;
-}
-.main_footer ul{
-	text-align: right;
 }
 .icon .fa{
-	font-size: 30px;
 	color: #AF0E0E;
 	float: left;
+	font-size: 30px;
 	margin-right: 15px;
 }
 .icon .fa-home,
 .icon .fa-newspaper-o{
 	border-bottom: 2px dotted #AF0E0E;
 }
-
 .icon .fa-home:hover,
 .icon .fa-newspaper-o:hover{
-	cursor: pointer;
-	color: #CE2D2D;
 	border-bottom: 2px dotted #CE2D2D;
+	color: #CE2D2D;
+	cursor: pointer;
 }
 .contact_box > h3{
-	margin-left: 60px;
-	text-transform: uppercase;
 	color: #555;
 	letter-spacing: 1px;
+	margin-left: 60px;
+	text-transform: uppercase;
 }
 .contact_box > p, 
 .contact_box > a{
-	font-size: 18px;
-	margin-left: 60px;
 	color: #555;
+	font-size: 18px;
 	letter-spacing: 1px;
+	margin-left: 60px;
 }
 .contact_box a:hover{
-	color: #CE2D2D;
 	border-bottom: 2px dotted #CE2D2D;
+	color: #CE2D2D;
 	text-decoration: none;
 }
 form input,
 form textarea{
-	line-height: 40px;
-	text-indent: 15px;
 	font-weight: normal;
+	line-height: 40px;
 	margin-top: 10px;
+	text-indent: 15px;
 }
 form input:focus,
 form textarea:focus{
@@ -465,8 +446,8 @@ form textarea:focus{
 	content: "";
 }
 .my_form label{
-	margin-top: 20px;
 	color: #555;
+	margin-top: 20px;
 }
 .my_form label span{
 	color: #AF0E0E;
@@ -476,22 +457,24 @@ form textarea:focus{
 }
 .form-group input{
 	display: block;
+	height: 50px;
 	width: 50%;	
 }
 .form-group textarea{
 	display: block;
+	height: 100px;
 	width: 100%;
 }
 .my_form button{
-	color: #CACACA;
 	background-color: #AF0E0E;
 	border: medium none;
+	color: #CACACA;
+	float: right;
+	font-weight: bold;
 	letter-spacing: 1px;
+	margin-top: 10px;
 	padding: 10px 20px;
 	text-transform: uppercase;
-	font-weight: bold;
-	float: right;
-	margin-top: 10px;
 }
 .my_form button:hover{
 	color: #fff;
@@ -500,4 +483,32 @@ form textarea:focus{
 #my_contacts .my_form .form-group .help-block .text_danger{
 	color: #AF0E0E;
 }
-
+.main_footer{
+	height: 80px;
+}
+.main_footer .container{
+	width: 90%;
+}
+.main_footer .copyright{
+	color: #999;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin-top: 35px;
+	text-transform: uppercase;
+	word-spacing: 5px;
+}
+.main_footer .copyright span{
+	font-weight: bold;
+}
+.main_footer .my_social .fa{
+	color: #999;
+	margin-top: 20px;
+	text-align: right;
+}
+.main_footer .my_social .fa:hover{
+	color: #ddd;
+}
+.main_footer ul{
+	text-align: right;
+}

@@ -6,23 +6,16 @@
 		margin-bottom: 190px;
 	}
 }
-
 @media only screen and (max-width: 768px){
 	.top_content h1{
 		font-size: 40px;
 	}
-	.top_content p{
-		margin: 0 20px;
+	.top_content h1::after{
+		margin: 70px 0 30px -100px;
+		width: 200px;
 	}
 	.top_mnu ul{
 		margin-top: 150px;
-	}
-	.top_content p{
-		color: #C9CAC4;
-		font-size: 14px;
-		font-weight: bold;
-		letter-spacing: 1px;
-		line-height: 1.2;
 	}
 	.section_content .wrapper{
 		width: 300px;
@@ -42,7 +35,8 @@
 		text-align: center;
 	}
 	@media only screen and (max-width: 360px){
-	.text_image_tab > label{
-		clear: both;
+		.text_image_tab > label{
+			clear: both;
+		}
 	}
 }

@@ -5,7 +5,7 @@ $(document).ready(function(){
 	$(".popup, .descr_image, .tab_img").magnificPopup({type:"image"});
 	$(".animation_left").animated("fadeInLeft", "fadeOutLeft");
 	$(".animation_right").animated("fadeInRight", "fadeOutRight");
-	$(".animation_flip").animated("flipInX", "flipOutX");
+	$(".animation_zoom").animated("zoomIn", "zoomOut");
 
 	$(function(){
 		$('#mixin').mixItUp();
@@ -38,14 +38,11 @@ $(document).ready(function(){
 		}
 	});
 
-	
-
 	$("input, select, textarea").jqBootstrapValidation();
 
 	$('.top_mnu ul a').on("click", function(){
-		$('html, body').animate({scrollTop:$($(this).context.hash).position().top}, 1500);
+		$('html, body').animate({scrollTop:$($(this).context.hash).position().top}, 1000);
 	});
-
 });
 
 $(window).load(function() { 
